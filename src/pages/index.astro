@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/hero/Hero.astro';
+---
+
+<BaseLayout
+  title="Matheus Thibau - Engineering Communication Across Cultures"
+  description="A cinematic portfolio documenting the projects, communities and technologies I've helped build over the last 15 years."
+>
+  <Hero />
+
+  <!-- Preview section -->
+  <section class="bg-neutral-50 py-16 sm:py-24">
+    <div class="container-max container-px">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg border border-neutral-200">
+          <h3 class="text-xl font-bold mb-4 text-neutral-900">Journey</h3>
+          <p class="text-neutral-600 mb-4">
+            15 years of building communication technologies for communities around the world.
+          </p>
+          <a href="/journey" class="text-primary-600 font-medium hover:text-primary-700">
+            Read more →
+          </a>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg border border-neutral-200">
+          <h3 class="text-xl font-bold mb-4 text-neutral-900">Projects</h3>
+          <p class="text-neutral-600 mb-4">
+            Featured case studies showcasing communication platforms and technologies.
+          </p>
+          <a href="/projects" class="text-primary-600 font-medium hover:text-primary-700">
+            Explore →
+          </a>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg border border-neutral-200">
+          <h3 class="text-xl font-bold mb-4 text-neutral-900">Communities</h3>
+          <p class="text-neutral-600 mb-4">
+            Organizations and communities I've worked with and contributed to.
+          </p>
+          <a href="/communities" class="text-primary-600 font-medium hover:text-primary-700">
+            Discover →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

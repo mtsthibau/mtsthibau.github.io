@@ -1,0 +1,134 @@
+---
+interface Props {}
+---
+
+<div class="relative min-h-screen bg-neutral-50 flex flex-col items-center justify-center overflow-hidden">
+  <!-- Background gradient -->
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-primary-50 via-neutral-50 to-neutral-100"
+  ></div>
+
+  <!-- Grid pattern -->
+  <div
+    class="absolute inset-0 opacity-5"
+    style="
+      background-image: 
+        linear-gradient(to right, #000 1px, transparent 1px),
+        linear-gradient(to bottom, #000 1px, transparent 1px);
+      background-size: 40px 40px;
+    "
+  ></div>
+
+  <!-- Content -->
+  <div class="relative z-10 container-max container-px text-center">
+    <!-- Tagline -->
+    <div class="mb-8 animate-fade-in">
+      <p class="text-label inline-block mb-4">
+        Welcome to my portfolio
+      </p>
+      <p class="text-neutral-600 text-sm">
+        Engineering Communication Across Cultures
+      </p>
+    </div>
+
+    <!-- Main heading -->
+    <h1
+      class="mb-6 text-neutral-900 animate-slide-up"
+      style="animation-delay: 0.1s"
+    >
+      Technology<br />should connect<br />people.
+    </h1>
+
+    <!-- Subheading -->
+    <div
+      class="max-w-2xl mx-auto mb-12 animate-slide-up"
+      style="animation-delay: 0.2s"
+    >
+      <h2 class="text-xl sm:text-2xl text-neutral-700 font-normal">
+        I'm <span class="font-semibold text-neutral-900">Matheus Thibau</span>, a software engineer building communication technologies for communities around the world.
+      </h2>
+    </div>
+
+    <!-- CTA buttons -->
+    <div
+      class="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-up"
+      style="animation-delay: 0.3s"
+    >
+      <a
+        href="/projects"
+        class="inline-flex items-center justify-center px-8 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+      >
+        View Projects
+      </a>
+      <a
+        href="/journey"
+        class="inline-flex items-center justify-center px-8 py-3 bg-neutral-100 text-neutral-900 font-medium rounded-lg hover:bg-neutral-200 transition-colors"
+      >
+        My Journey
+      </a>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div
+      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+    >
+      <svg
+        class="w-6 h-6 text-neutral-400"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-bounce {
+    animation: bounce 2s infinite;
+  }
+</style>

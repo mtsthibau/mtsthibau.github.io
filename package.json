@@ -1,0 +1,25 @@
+{
+  "name": "mtsthibau.github.io",
+  "version": "1.0.0",
+  "description": "Engineering Communication Across Cultures - A cinematic portfolio documenting projects, communities and technologies built over 15 years.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "dependencies": {
+    "astro": "^5.18.2"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "@astrojs/check": "^0.9.9",
+    "@tailwindcss/typography": "^0.5.16",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2"
+  }
+}
