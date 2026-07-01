@@ -4,10 +4,46 @@ import Hero from '../components/hero/Hero.astro';
 ---
 
 <BaseLayout
-  title="Matheus Thibau - Engineering Communication Across Cultures"
-  description="A cinematic portfolio documenting the projects, communities and technologies I've helped build over the last 15 years."
+  title="Matheus Thibau - Experienced Frontend Engineer"
+  description="Experienced frontend engineer crafting resilient digital experiences, design systems, and communication platforms."
 >
   <Hero />
+
+  <section class="bg-white py-16 sm:py-24">
+    <div class="container-max container-px">
+      <div class="max-w-3xl">
+        <p class="text-label text-primary-600 uppercase tracking-[0.2em] mb-4">
+          Experience & capabilities
+        </p>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900 mb-6">
+          I bring design sensibility and engineering depth to every interface.
+        </h2>
+        <p class="text-lg text-neutral-700 leading-relaxed mb-8">
+          With more than 15 years of experience, I design and build web experiences that balance aesthetics, usability, accessibility, and performance. My work spans interface design, design systems, frontend architecture, and product development for mission-driven and communication-focused digital products.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
+        <div class="bg-neutral-50 p-8 rounded-lg border border-neutral-200">
+          <h3 class="text-xl font-bold text-neutral-900 mb-4">Design-led development</h3>
+          <ul class="space-y-2 text-neutral-700">
+            <li>• UI and UX design for modern web products</li>
+            <li>• Responsive and accessible interfaces</li>
+            <li>• Visual systems, layouts, and content hierarchy</li>
+          </ul>
+        </div>
+
+        <div class="bg-neutral-50 p-8 rounded-lg border border-neutral-200">
+          <h3 class="text-xl font-bold text-neutral-900 mb-4">Frontend engineering</h3>
+          <ul class="space-y-2 text-neutral-700">
+            <li>• TypeScript, JavaScript, and modern frameworks</li>
+            <li>• Design systems and scalable component architecture</li>
+            <li>• Performance, maintainability, and cross-team collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Preview section -->
   <section class="bg-neutral-50 py-16 sm:py-24">
@@ -16,7 +52,7 @@ import Hero from '../components/hero/Hero.astro';
         <div class="bg-white p-8 rounded-lg border border-neutral-200">
           <h3 class="text-xl font-bold mb-4 text-neutral-900">Journey</h3>
           <p class="text-neutral-600 mb-4">
-            15 years of building communication technologies for communities around the world.
+            15+ years shaping digital products with a design-led, systems-oriented approach.
           </p>
           <a href="/journey" class="text-primary-600 font-medium hover:text-primary-700">
             Read more →
@@ -26,7 +62,7 @@ import Hero from '../components/hero/Hero.astro';
         <div class="bg-white p-8 rounded-lg border border-neutral-200">
           <h3 class="text-xl font-bold mb-4 text-neutral-900">Projects</h3>
           <p class="text-neutral-600 mb-4">
-            Featured case studies showcasing communication platforms and technologies.
+            Featured case studies spanning interface design, frontend architecture, and human-centered platforms.
           </p>
           <a href="/projects" class="text-primary-600 font-medium hover:text-primary-700">
             Explore →
