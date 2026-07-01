@@ -9,74 +9,145 @@ import Hero from '../components/hero/Hero.astro';
 >
   <Hero />
 
-  <section class="bg-white py-16 sm:py-24">
+  <section class="bg-white py-20 sm:py-24">
     <div class="container-max container-px">
-      <div class="max-w-3xl">
-        <p class="text-label text-primary-600 uppercase tracking-[0.2em] mb-4">
-          Experience & capabilities
-        </p>
-        <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900 mb-6">
-          I bring design sensibility and engineering depth to every interface.
-        </h2>
-        <p class="text-lg text-neutral-700 leading-relaxed mb-8">
-          With more than 15 years of experience, I design and build web experiences that balance aesthetics, usability, accessibility, and performance. My work spans interface design, design systems, frontend architecture, and product development for mission-driven and communication-focused digital products.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
-        <div class="bg-neutral-50 p-8 rounded-lg border border-neutral-200">
-          <h3 class="text-xl font-bold text-neutral-900 mb-4">Design-led development</h3>
-          <ul class="space-y-2 text-neutral-700">
-            <li>• UI and UX design for modern web products</li>
-            <li>• Responsive and accessible interfaces</li>
-            <li>• Visual systems, layouts, and content hierarchy</li>
-          </ul>
+      <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 items-start">
+        <div>
+          <p class="text-label text-primary-600 uppercase tracking-[0.2em] mb-4">
+            What defines my work
+          </p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900 mb-6">
+            I connect thoughtful design with systems that must work in the real world.
+          </h2>
+          <p class="text-lg text-neutral-700 leading-relaxed">
+            My career has moved across education, e-commerce, operational platforms, and communication systems. That range has made me especially strong at translating complex requirements into intuitive interfaces, robust architectures, and measurable product outcomes.
+          </p>
         </div>
 
-        <div class="bg-neutral-50 p-8 rounded-lg border border-neutral-200">
-          <h3 class="text-xl font-bold text-neutral-900 mb-4">Frontend engineering</h3>
-          <ul class="space-y-2 text-neutral-700">
-            <li>• TypeScript, JavaScript, and modern frameworks</li>
-            <li>• Design systems and scalable component architecture</li>
-            <li>• Performance, maintainability, and cross-team collaboration</li>
-          </ul>
+        <div class="grid gap-4">
+          <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
+            <h3 class="font-semibold text-neutral-900">Resilient systems</h3>
+            <p class="mt-2 text-sm text-neutral-600">Built for low-connectivity, remote operations, and difficult environments.</p>
+          </div>
+          <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
+            <h3 class="font-semibold text-neutral-900">Human-centered interfaces</h3>
+            <p class="mt-2 text-sm text-neutral-600">Design that supports clarity, accessibility, and trust under pressure.</p>
+          </div>
+          <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
+            <h3 class="font-semibold text-neutral-900">Frontend architecture</h3>
+            <p class="mt-2 text-sm text-neutral-600">Scalable component systems, design consistency, and long-term maintainability.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
+          <p class="text-3xl font-semibold text-neutral-900">300k+</p>
+          <p class="mt-2 text-sm text-neutral-600">students reached through educational platforms</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
+          <p class="text-3xl font-semibold text-neutral-900">5k+</p>
+          <p class="mt-2 text-sm text-neutral-600">users supported across operational and field products</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
+          <p class="text-3xl font-semibold text-neutral-900">15+</p>
+          <p class="mt-2 text-sm text-neutral-600">years of engineering, design, and product development</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Preview section -->
-  <section class="bg-neutral-50 py-16 sm:py-24">
+  <section class="bg-neutral-50 py-20 sm:py-24">
     <div class="container-max container-px">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-lg border border-neutral-200">
-          <h3 class="text-xl font-bold mb-4 text-neutral-900">Journey</h3>
-          <p class="text-neutral-600 mb-4">
-            15+ years shaping digital products with a design-led, systems-oriented approach.
-          </p>
-          <a href="/journey" class="text-primary-600 font-medium hover:text-primary-700">
-            Read more →
-          </a>
-        </div>
+      <div class="max-w-3xl mb-10">
+        <p class="text-label text-primary-600 uppercase tracking-[0.2em] mb-4">Featured work</p>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900">Selected projects that show the range of my experience.</h2>
+      </div>
 
-        <div class="bg-white p-8 rounded-lg border border-neutral-200">
-          <h3 class="text-xl font-bold mb-4 text-neutral-900">Projects</h3>
-          <p class="text-neutral-600 mb-4">
-            Featured case studies spanning interface design, frontend architecture, and human-centered platforms.
-          </p>
-          <a href="/projects" class="text-primary-600 font-medium hover:text-primary-700">
-            Explore →
-          </a>
-        </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <article class="rounded-3xl border border-neutral-200 bg-white p-8 shadow-sm">
+          <p class="text-sm font-medium text-primary-600">Rhizomatica · HERMES</p>
+          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">Communication software for underserved regions</h3>
+          <p class="mt-4 text-neutral-600 leading-relaxed">I helped shape a frontend experience for a platform that exchanges data over shortwave radio, combining usability with hardware-aware workflows and resilient interaction patterns.</p>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Angular</span>
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">SDR / GPS</span>
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Offline-first</span>
+          </div>
+        </article>
 
-        <div class="bg-white p-8 rounded-lg border border-neutral-200">
-          <h3 class="text-xl font-bold mb-4 text-neutral-900">Communities</h3>
-          <p class="text-neutral-600 mb-4">
-            Organizations and communities I've worked with and contributed to.
-          </p>
-          <a href="/communities" class="text-primary-600 font-medium hover:text-primary-700">
-            Discover →
-          </a>
+        <article class="rounded-3xl border border-neutral-200 bg-white p-8 shadow-sm">
+          <p class="text-sm font-medium text-primary-600">Bernoulli Educação</p>
+          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">Education platform for hundreds of thousands of students</h3>
+          <p class="mt-4 text-neutral-600 leading-relaxed">I contributed to large-scale educational interfaces, including learning resources and essay correction systems designed to support massive reach and reliable use.</p>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">TypeScript</span>
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Frontend architecture</span>
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Mentorship</span>
+          </div>
+        </article>
+
+        <article class="rounded-3xl border border-neutral-200 bg-white p-8 shadow-sm">
+          <p class="text-sm font-medium text-primary-600">4Milk</p>
+          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">Operational tools for farm management</h3>
+          <p class="mt-4 text-neutral-600 leading-relaxed">I built interfaces for a platform supporting thousands of users in environments where connectivity and operational clarity mattered equally.</p>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Web apps</span>
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Offline workflows</span>
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Product thinking</span>
+          </div>
+        </article>
+
+        <article class="rounded-3xl border border-neutral-200 bg-white p-8 shadow-sm">
+          <p class="text-sm font-medium text-primary-600">Open source & systems work</p>
+          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">A broad toolkit shaped by collaboration and experimentation</h3>
+          <p class="mt-4 text-neutral-600 leading-relaxed">My work spans Vue, React, Angular, Python, PHP, Shopify, WebSockets, and more, always grounded in building maintainable software with clear product outcomes.</p>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Vue</span>
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">React</span>
+            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Python</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral-900 py-20 sm:py-24 text-white">
+    <div class="container-max container-px">
+      <div class="max-w-3xl">
+        <p class="text-label text-primary-300 uppercase tracking-[0.2em] mb-4">Toolkit</p>
+        <h2 class="text-3xl sm:text-4xl font-semibold mb-6">Design systems, frontend engineering, and product thinking in one profile.</h2>
+        <p class="text-lg text-neutral-300 leading-relaxed">
+          I bring together interface craft, modern frontend stacks, and the discipline to build software that lasts beyond the first release.
+        </p>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-3">
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">TypeScript</span>
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Angular</span>
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Vue</span>
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">React</span>
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Python</span>
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">WebSockets</span>
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Shopify</span>
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Design systems</span>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white/5 rounded-2xl border border-white/10 p-6">
+          <h3 class="text-xl font-semibold">Journey</h3>
+          <p class="mt-3 text-sm text-neutral-300">A long-term path through engineering, design, education, and mission-driven products.</p>
+          <a href="/journey" class="mt-4 inline-flex text-primary-300 hover:text-primary-200">Read more →</a>
+        </div>
+        <div class="bg-white/5 rounded-2xl border border-white/10 p-6">
+          <h3 class="text-xl font-semibold">Projects</h3>
+          <p class="mt-3 text-sm text-neutral-300">A deeper look at the work behind the platforms and systems I’ve built.</p>
+          <a href="/projects" class="mt-4 inline-flex text-primary-300 hover:text-primary-200">Explore projects →</a>
+        </div>
+        <div class="bg-white/5 rounded-2xl border border-white/10 p-6">
+          <h3 class="text-xl font-semibold">Communities</h3>
+          <p class="mt-3 text-sm text-neutral-300">The networks, teams, and communities that shaped the way I work.</p>
+          <a href="/communities" class="mt-4 inline-flex text-primary-300 hover:text-primary-200">Discover more →</a>
         </div>
       </div>
     </div>

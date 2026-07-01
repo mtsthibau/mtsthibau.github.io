@@ -2,92 +2,73 @@
 interface Props {}
 ---
 
-<div class="relative min-h-screen bg-neutral-50 flex flex-col items-center justify-center overflow-hidden">
-  <!-- Background gradient -->
+<div class="relative min-h-screen bg-neutral-950 text-white flex flex-col items-center justify-center overflow-hidden">
   <div
-    class="absolute inset-0 bg-gradient-to-br from-primary-50 via-neutral-50 to-neutral-100"
+    class="absolute inset-0"
+    style="background: radial-gradient(circle at top left, rgba(14,165,233,0.2), transparent 32%), radial-gradient(circle at bottom right, rgba(255,255,255,0.08), transparent 28%);"
   ></div>
 
-  <!-- Grid pattern -->
   <div
-    class="absolute inset-0 opacity-5"
+    class="absolute inset-0 opacity-20"
     style="
-      background-image: 
-        linear-gradient(to right, #000 1px, transparent 1px),
-        linear-gradient(to bottom, #000 1px, transparent 1px);
+      background-image:
+        linear-gradient(to right, #ffffff 1px, transparent 1px),
+        linear-gradient(to bottom, #ffffff 1px, transparent 1px);
       background-size: 40px 40px;
     "
   ></div>
 
-  <!-- Content -->
-  <div class="relative z-10 container-max container-px text-center">
-    <!-- Tagline -->
-    <div class="mb-8 animate-fade-in">
-      <p class="text-label inline-block mb-4">
-        Welcome to my portfolio
-      </p>
-      <p class="text-neutral-600 text-sm">
-        Designing resilient digital experiences
-      </p>
-    </div>
+  <div class="relative z-10 container-max container-px py-24 sm:py-32">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="mb-8 animate-fade-in">
+        <p class="text-label inline-block mb-4 uppercase tracking-[0.3em] text-primary-300">
+          Experienced web designer & frontend engineer
+        </p>
+        <p class="text-sm text-neutral-400">
+          Designing resilient digital experiences for people, systems, and communities
+        </p>
+      </div>
 
-    <!-- Main heading -->
-    <h1
-      class="mb-6 text-neutral-900 animate-slide-up"
-      style="animation-delay: 0.1s"
-    >
-      Technology<br />should connect<br />people.
-    </h1>
+      <h1 class="mb-6 text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-white animate-slide-up" style="animation-delay: 0.1s">
+        I build digital systems that help people communicate, learn, and operate under real-world constraints.
+      </h1>
 
-    <!-- Subheading -->
-    <div
-      class="max-w-2xl mx-auto mb-12 animate-slide-up"
-      style="animation-delay: 0.2s"
-    >
-      <h2 class="text-xl sm:text-2xl text-neutral-700 font-normal">
-        I'm <span class="font-semibold text-neutral-900">Matheus Thibau</span>, an experienced frontend engineer crafting thoughtful digital experiences for communities, education, and mission-driven products.
-      </h2>
-      <p class="mt-4 text-lg text-neutral-600 leading-relaxed">
-        I blend interface design, frontend architecture, and systems thinking to create clear, accessible, and resilient products.
-      </p>
-    </div>
+      <div class="mx-auto max-w-3xl animate-slide-up" style="animation-delay: 0.2s">
+        <p class="text-lg sm:text-xl text-neutral-300 leading-relaxed">
+          With 15+ years of experience, I design and engineer interfaces that balance clarity, performance, and resilience for education, humanitarian, and communication-focused products.
+        </p>
+      </div>
 
-    <!-- CTA buttons -->
-    <div
-      class="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-up"
-      style="animation-delay: 0.3s"
-    >
-      <a
-        href="/projects"
-        class="inline-flex items-center justify-center px-8 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
-      >
-        View Projects
-      </a>
-      <a
-        href="/journey"
-        class="inline-flex items-center justify-center px-8 py-3 bg-neutral-100 text-neutral-900 font-medium rounded-lg hover:bg-neutral-200 transition-colors"
-      >
-        My Journey
-      </a>
-    </div>
+      <div class="mt-8 flex flex-wrap justify-center gap-3 animate-slide-up" style="animation-delay: 0.25s">
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">15+ years experience</span>
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">HF radio & resilient systems</span>
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">300k+ students reached</span>
+        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Open-source & hardware-aware software</span>
+      </div>
 
-    <!-- Scroll indicator -->
-    <div
-      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
-    >
-      <svg
-        class="w-6 h-6 text-neutral-400"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M19 14l-7 7m0 0l-7-7m7 7V3"
-        />
-      </svg>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 animate-slide-up" style="animation-delay: 0.3s">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur-sm">
+          <p class="text-3xl font-semibold text-white">15+</p>
+          <p class="mt-1 text-sm text-neutral-400">years shaping products, teams, and interfaces</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur-sm">
+          <p class="text-3xl font-semibold text-white">HERMES</p>
+          <p class="mt-1 text-sm text-neutral-400">communication software for underserved regions</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur-sm">
+          <p class="text-3xl font-semibold text-white">5k+</p>
+          <p class="mt-1 text-sm text-neutral-400">users supported through operational platforms</p>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-slide-up" style="animation-delay: 0.35s">
+        <a href="/projects" class="inline-flex items-center justify-center px-8 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors">
+          View featured work
+        </a>
+        <a href="/journey" class="inline-flex items-center justify-center px-8 py-3 bg-white/10 text-white font-medium rounded-lg hover:bg-white/20 transition-colors">
+          Explore my journey
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -113,15 +94,6 @@ interface Props {}
     }
   }
 
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out forwards;
   }
@@ -129,9 +101,5 @@ interface Props {}
   .animate-slide-up {
     animation: slideUp 0.8s ease-out forwards;
     opacity: 0;
-  }
-
-  .animate-bounce {
-    animation: bounce 2s infinite;
   }
 </style>
