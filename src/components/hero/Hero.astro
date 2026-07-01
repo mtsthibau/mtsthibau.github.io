@@ -4,84 +4,69 @@ import profileImage from '../../assets/images/workshops/profile.png';
 interface Props {}
 ---
 
-<div class="relative min-h-screen bg-neutral-950 text-white flex flex-col items-center justify-center overflow-hidden">
-  <div
-    class="absolute inset-0"
-    style="background: radial-gradient(circle at top left, rgba(14,165,233,0.2), transparent 32%), radial-gradient(circle at bottom right, rgba(255,255,255,0.08), transparent 28%);"
-  ></div>
-
-  <div
-    class="absolute inset-0 opacity-20"
-    style="
-      background-image:
-        linear-gradient(to right, #ffffff 1px, transparent 1px),
-        linear-gradient(to bottom, #ffffff 1px, transparent 1px);
-      background-size: 40px 40px;
-    "
-  ></div>
+<div class="relative min-h-screen overflow-hidden bg-[#06070a] text-white">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.18),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.12),transparent_24%)]"></div>
+  <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(to right, rgba(255,255,255,0.25) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.25) 1px, transparent 1px); background-size: 42px 42px;"></div>
+  <div class="absolute -left-16 top-16 h-64 w-64 rounded-full bg-primary-500/20 blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
 
   <div class="relative z-10 container-max container-px py-24 sm:py-32">
-    <div class="max-w-4xl mx-auto text-center">
-      <div class="mb-8 animate-fade-in">
-        <p class="text-label inline-block mb-4 uppercase tracking-[0.3em] text-primary-300">
-          Experienced web designer & frontend engineer
+    <div class="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+      <div class="max-w-3xl animate-fade-in">
+        <p class="mb-4 text-label uppercase tracking-[0.3em] text-primary-300">
+          Creative web designer • frontend engineer
         </p>
-        <p class="text-sm text-neutral-400">
-          Designing resilient digital experiences for people, systems, and communities
+        <h1 class="text-4xl font-semibold leading-[0.95] tracking-tight text-white sm:text-5xl lg:text-7xl">
+          I make digital experiences that feel as alive as the ideas behind them.
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300 sm:text-xl">
+          With 15+ years of experience, I design and build websites that blend storytelling, clarity, and resilient engineering for education, humanitarian, and communication-focused products.
         </p>
-      </div>
 
-      <h1 class="mb-6 text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-white animate-slide-up" style="animation-delay: 0.1s">
-        I build digital systems that help people communicate, learn, and operate under real-world constraints.
-      </h1>
-
-      <div class="mx-auto max-w-3xl animate-slide-up" style="animation-delay: 0.2s">
-        <p class="text-lg sm:text-xl text-neutral-300 leading-relaxed">
-          With 15+ years of experience, I design and engineer interfaces that balance clarity, performance, and resilience for education, humanitarian, and communication-focused products.
-        </p>
-      </div>
-
-      <div class="mt-8 flex flex-wrap justify-center gap-3 animate-slide-up" style="animation-delay: 0.25s">
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">15+ years experience</span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">HF radio & resilient systems</span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">300k+ students reached</span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Open-source & hardware-aware software</span>
-      </div>
-
-      <div class="mt-10 flex flex-col lg:flex-row items-center justify-center gap-6 animate-slide-up" style="animation-delay: 0.3s">
-        <div class="overflow-hidden rounded-full border border-white/20 bg-white/10 p-1 shadow-2xl">
-          <img src={profileImage.src} alt="Matheus Thibau" class="h-28 w-28 rounded-full object-cover" />
+        <div class="mt-8 flex flex-wrap gap-3">
+          <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">15+ years experience</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">HF radio & resilient systems</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">300k+ students reached</span>
         </div>
-        <div class="max-w-xl rounded-2xl border border-white/10 bg-white/5 p-6 text-left backdrop-blur-sm">
-          <p class="text-sm font-medium uppercase tracking-[0.2em] text-primary-300">About me</p>
-          <p class="mt-3 text-base text-neutral-300 leading-relaxed">
-            I’m a product-minded engineer who cares about clarity, accessibility, and building things that genuinely help people work, learn, and communicate.
-          </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a href="/projects" class="inline-flex items-center justify-center rounded-full bg-primary-600 px-8 py-3 font-medium text-white transition hover:bg-primary-700">
+            View featured work
+          </a>
+          <a href="/journey" class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-8 py-3 font-medium text-white transition hover:bg-white/20">
+            Explore my journey
+          </a>
         </div>
       </div>
 
-      <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 animate-slide-up" style="animation-delay: 0.35s">
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur-sm">
-          <p class="text-3xl font-semibold text-white">15+</p>
-          <p class="mt-1 text-sm text-neutral-400">years shaping products, teams, and interfaces</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur-sm">
-          <p class="text-3xl font-semibold text-white">HERMES</p>
-          <p class="mt-1 text-sm text-neutral-400">communication software for underserved regions</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left backdrop-blur-sm">
-          <p class="text-3xl font-semibold text-white">5k+</p>
-          <p class="mt-1 text-sm text-neutral-400">users supported through operational platforms</p>
+      <div class="relative animate-slide-up" style="animation-delay: 0.1s">
+        <div class="absolute inset-0 rounded-[2rem] border border-white/10 bg-white/10 blur-3xl"></div>
+        <div class="relative rounded-[2rem] border border-white/15 bg-neutral-900/70 p-6 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur">
+          <div class="overflow-hidden rounded-[1.5rem] border border-white/10">
+            <img src={profileImage.src} alt="Matheus Thibau" class="h-[420px] w-full object-cover" />
+          </div>
+          <div class="mt-6 rounded-[1.25rem] border border-white/10 bg-white/5 p-5">
+            <p class="text-sm uppercase tracking-[0.3em] text-primary-300">Now building</p>
+            <p class="mt-2 text-base leading-relaxed text-neutral-300">
+              Web experiences for communities, education, and systems that must work beyond the ideal conditions.
+            </p>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-slide-up" style="animation-delay: 0.4s">
-        <a href="/projects" class="inline-flex items-center justify-center px-8 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors">
-          View featured work
-        </a>
-        <a href="/journey" class="inline-flex items-center justify-center px-8 py-3 bg-white/10 text-white font-medium rounded-lg hover:bg-white/20 transition-colors">
-          Explore my journey
-        </a>
+    <div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3 animate-slide-up" style="animation-delay: 0.2s">
+      <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+        <p class="text-3xl font-semibold text-white">15+</p>
+        <p class="mt-1 text-sm text-neutral-400">years shaping products, teams, and interfaces</p>
+      </div>
+      <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+        <p class="text-3xl font-semibold text-white">HERMES</p>
+        <p class="mt-1 text-sm text-neutral-400">communication software for underserved regions</p>
+      </div>
+      <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+        <p class="text-3xl font-semibold text-white">5k+</p>
+        <p class="mt-1 text-sm text-neutral-400">users supported through operational platforms</p>
       </div>
     </div>
   </div>
