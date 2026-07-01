@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/hero/Hero.astro';
+import workshopOne from '../assets/images/workshops/workshop-1.svg';
+import workshopTwo from '../assets/images/workshops/workshop-2.svg';
+import workshopThree from '../assets/images/workshops/workshop-3.svg';
 ---
 
 <BaseLayout
@@ -108,6 +111,44 @@ import Hero from '../components/hero/Hero.astro';
             <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Python</span>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20 sm:py-24">
+    <div class="container-max container-px">
+      <div class="max-w-3xl mb-10">
+        <p class="text-label text-primary-600 uppercase tracking-[0.2em] mb-4">Workshops & community</p>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900">A visual glimpse into the workshops, sessions, and collaborative spaces I help shape.</h2>
+        <p class="mt-4 text-lg text-neutral-700 leading-relaxed">
+          Beyond software delivery, I enjoy creating environments where ideas, tools, and people can come together. These visuals reflect the hands-on, welcoming spirit behind my workshop work.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <figure class="overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 shadow-sm">
+          <img src={workshopOne.src} alt="Workshop illustration with collaborative planning and digital tools" class="h-64 w-full object-cover" />
+          <figcaption class="p-5">
+            <h3 class="font-semibold text-neutral-900">Collaborative sessions</h3>
+            <p class="mt-2 text-sm text-neutral-600">Hands-on workshops focused on product thinking, design, and frontend craft.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 shadow-sm">
+          <img src={workshopTwo.src} alt="Workshop illustration with interactive learning and group activities" class="h-64 w-full object-cover" />
+          <figcaption class="p-5">
+            <h3 class="font-semibold text-neutral-900">Learning environments</h3>
+            <p class="mt-2 text-sm text-neutral-600">Spaces designed to make complex ideas approachable and practical.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 shadow-sm">
+          <img src={workshopThree.src} alt="Workshop illustration showing a technical event with discussion and demos" class="h-64 w-full object-cover" />
+          <figcaption class="p-5">
+            <h3 class="font-semibold text-neutral-900">Technical demos</h3>
+            <p class="mt-2 text-sm text-neutral-600">Presentations and practical demos that connect people with tools and ideas.</p>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
