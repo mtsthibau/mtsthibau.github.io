@@ -1,5 +1,4 @@
 ---
-import Navigation from '../components/layout/Navigation.astro';
 import Footer from '../components/layout/Footer.astro';
 import '../styles/globals.css';
 
@@ -60,7 +59,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
   </head>
   <body>
-    <Navigation />
     <main class="min-h-screen">
       <slot />
     </main>

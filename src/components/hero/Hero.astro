@@ -1,20 +1,25 @@
 ---
+import { ArrowRight, BookOpen, Cpu, Radio, Sparkles } from 'lucide-astro';
 import profileImage from '../../assets/images/workshops/profile.png';
 
 interface Props {}
 ---
 
-<div class="relative min-h-screen overflow-hidden bg-[#06070a] text-white">
-  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.18),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.12),transparent_24%)]"></div>
-  <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(to right, rgba(255,255,255,0.25) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.25) 1px, transparent 1px); background-size: 42px 42px;"></div>
+<div class="relative min-h-screen overflow-hidden bg-[#03060a] text-white">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.2),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(16,185,129,0.12),transparent_24%)]"></div>
+  <div class="absolute inset-0 opacity-70" style="background-image: linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 42px 42px;"></div>
+  <div class="absolute inset-0 opacity-40" style="background-image: linear-gradient(to bottom, transparent 0%, rgba(3,6,10,0.55) 100%);"></div>
   <div class="absolute -left-16 top-16 h-64 w-64 rounded-full bg-primary-500/20 blur-3xl"></div>
-  <div class="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-emerald-400/10 blur-3xl"></div>
 
-  <div class="relative z-10 container-max container-px py-24 sm:py-32">
+  <div class="matrix-layer absolute inset-0 overflow-hidden opacity-40"></div>
+
+  <div class="relative z-10 flex min-h-screen flex-col justify-between container-max container-px py-24 sm:py-32">
     <div class="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
       <div class="max-w-3xl animate-fade-in">
-        <p class="mb-4 text-label uppercase tracking-[0.3em] text-primary-300">
-          Creative web designer • frontend engineer
+        <p class="mb-4 flex items-center gap-2 text-label uppercase tracking-[0.3em] text-primary-300">
+          <Sparkles size={28} />
+          Frontend engineer
         </p>
         <h1 class="text-4xl font-semibold leading-[0.95] tracking-tight text-white sm:text-5xl lg:text-7xl">
           I make digital experiences that feel as alive as the ideas behind them.
@@ -30,11 +35,13 @@ interface Props {}
         </div>
 
         <div class="mt-10 flex flex-col sm:flex-row gap-4">
-          <a href="/projects" class="inline-flex items-center justify-center rounded-full bg-primary-600 px-8 py-3 font-medium text-white transition hover:bg-primary-700">
-            View featured work
+          <a href="#story" class="inline-flex items-center justify-center gap-2 rounded-full bg-primary-600 px-8 py-3 font-medium text-white transition hover:bg-primary-700">
+            Enter the experience
+            <ArrowRight size={20} />
           </a>
-          <a href="/journey" class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-8 py-3 font-medium text-white transition hover:bg-white/20">
+          <a href="/journey" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/10 px-8 py-3 font-medium text-white transition hover:bg-white/20">
             Explore my journey
+            <BookOpen size={20} />
           </a>
         </div>
       </div>
@@ -46,7 +53,7 @@ interface Props {}
             <img src={profileImage.src} alt="Matheus Thibau" class="h-[420px] w-full object-cover" />
           </div>
           <div class="mt-6 rounded-[1.25rem] border border-white/10 bg-white/5 p-5">
-            <p class="text-sm uppercase tracking-[0.3em] text-primary-300">Now building</p>
+            <p class="flex items-center gap-2 text-sm uppercase tracking-[0.3em] text-primary-300"><Cpu size={20} /> Now building</p>
             <p class="mt-2 text-base leading-relaxed text-neutral-300">
               Web experiences for communities, education, and systems that must work beyond the ideal conditions.
             </p>
@@ -57,17 +64,24 @@ interface Props {}
 
     <div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3 animate-slide-up" style="animation-delay: 0.2s">
       <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
-        <p class="text-3xl font-semibold text-white">15+</p>
+        <p class="flex items-center gap-2 text-3xl font-semibold text-white"><Cpu size={24} />15+</p>
         <p class="mt-1 text-sm text-neutral-400">years shaping products, teams, and interfaces</p>
       </div>
       <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
-        <p class="text-3xl font-semibold text-white">HERMES</p>
+        <p class="flex items-center gap-2 text-3xl font-semibold text-white"><Radio size={24} />HERMES</p>
         <p class="mt-1 text-sm text-neutral-400">communication software for underserved regions</p>
       </div>
       <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
         <p class="text-3xl font-semibold text-white">5k+</p>
         <p class="mt-1 text-sm text-neutral-400">users supported through operational platforms</p>
       </div>
+    </div>
+
+    <div class="mt-10 flex justify-center animate-fade-in">
+      <a href="#story" class="flex flex-col items-center gap-2 text-sm uppercase tracking-[0.3em] text-neutral-400 transition hover:text-white">
+        <span>Scroll</span>
+        <span class="text-xl">↓</span>
+      </a>
     </div>
   </div>
 </div>
@@ -100,5 +114,39 @@ interface Props {}
   .animate-slide-up {
     animation: slideUp 0.8s ease-out forwards;
     opacity: 0;
+  }
+
+  .matrix-layer {
+    background-image:
+      linear-gradient(rgba(14, 165, 233, 0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(14, 165, 233, 0.12) 1px, transparent 1px);
+    background-size: 22px 22px;
+    mask-image: linear-gradient(to bottom, black 10%, transparent 90%);
+    -webkit-mask-image: linear-gradient(to bottom, black 10%, transparent 90%);
+    animation: drift 18s linear infinite;
+  }
+
+  .matrix-layer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(16, 185, 129, 0.08) 0px,
+      rgba(16, 185, 129, 0.08) 2px,
+      transparent 2px,
+      transparent 16px
+    );
+    mix-blend-mode: screen;
+    opacity: 0.8;
+  }
+
+  @keyframes drift {
+    from {
+      transform: translateY(-4%);
+    }
+    to {
+      transform: translateY(4%);
+    }
   }
 </style>

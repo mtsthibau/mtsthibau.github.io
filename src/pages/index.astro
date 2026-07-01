@@ -1,9 +1,20 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/hero/Hero.astro';
-import workshopOne from '../assets/images/workshops/workshop-1.svg';
-import workshopTwo from '../assets/images/workshops/workshop-2.svg';
-import workshopThree from '../assets/images/workshops/workshop-3.svg';
+import {
+  BookOpen,
+  Compass,
+  Cpu,
+  Layers3,
+  Network,
+  Sparkles,
+  Users,
+  Workflow,
+} from "lucide-astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/hero/Hero.astro";
+import galleryOne from "../assets/images/workshops/santarem1.jpg";
+import galleryTwo from "../assets/images/workshops/santarem2.jpg";
+import galleryThree from "../assets/images/workshops/tunisia.jpg";
+import galleryFour from "../assets/images/workshops/tunisia2.jpg";
 ---
 
 <BaseLayout
@@ -12,106 +23,360 @@ import workshopThree from '../assets/images/workshops/workshop-3.svg';
 >
   <Hero />
 
-  <section class="bg-white py-20 sm:py-24">
-    <div class="container-max container-px">
-      <div class="grid grid-cols-1 gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
-        <div>
-          <p class="mb-4 text-label uppercase tracking-[0.2em] text-primary-600">
+  <section id="story" class="relative overflow-hidden bg-white py-20 sm:py-24">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.08),transparent_24%)]"
+    >
+    </div>
+    <div class="container-max container-px relative">
+      <div
+        class="grid grid-cols-1 gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start"
+      >
+        <div class="max-w-2xl">
+          <p
+            class="mb-4 text-label uppercase tracking-[0.2em] text-primary-600"
+          >
             What defines my work
           </p>
           <h2 class="mb-6 text-3xl font-semibold text-neutral-900 sm:text-4xl">
-            I build experiences that feel thoughtful, surprising, and useful.
+            I build interfaces that feel calm in the middle of real-world
+            complexity.
           </h2>
           <p class="text-lg leading-relaxed text-neutral-700">
-            My path has moved through education, commerce, operations, and communication systems. That mix taught me how to turn complex constraints into interfaces that are calm, clear, and genuinely human.
+            My path has moved through education, commerce, operations, and
+            communication systems. I think in stories, systems, and friction
+            points — and I care about making difficult tools feel legible,
+            human, and useful.
           </p>
         </div>
 
         <div class="grid gap-4">
-          <div class="rounded-[1.5rem] border border-neutral-200 bg-gradient-to-br from-neutral-50 to-white p-6 shadow-sm">
-            <p class="text-xs font-semibold uppercase tracking-[0.28em] text-primary-600">01</p>
-            <h3 class="mt-3 font-semibold text-neutral-900">Resilient systems</h3>
-            <p class="mt-2 text-sm text-neutral-600">Built for low-connectivity, remote operations, and difficult environments.</p>
+          <div
+            class="rounded-[2rem] border border-neutral-300 bg-[linear-gradient(135deg,#f8fbff_0%,#ffffff_50%,#eefcf7_100%)] p-6 shadow-lg"
+          >
+            <div
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+            >
+              <Sparkles size={22} />
+            </div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.28em] text-primary-600"
+            >
+              01
+            </p>
+            <h3 class="mt-3 font-semibold text-neutral-900">
+              Signals over noise
+            </h3>
+            <p class="mt-2 text-sm text-neutral-600">
+              I shape interfaces around what matters most when attention is
+              scarce and the stakes are real.
+            </p>
           </div>
-          <div class="rounded-[1.5rem] border border-neutral-200 bg-gradient-to-br from-neutral-50 to-white p-6 shadow-sm">
-            <p class="text-xs font-semibold uppercase tracking-[0.28em] text-primary-600">02</p>
-            <h3 class="mt-3 font-semibold text-neutral-900">Human-centered interfaces</h3>
-            <p class="mt-2 text-sm text-neutral-600">Design that supports clarity, accessibility, and trust under pressure.</p>
+          <div
+            class="rounded-[2rem] border border-neutral-300 bg-[linear-gradient(135deg,#fffcf7_0%,#ffffff_45%,#f5f3ff_100%)] p-6 shadow-lg"
+          >
+            <div
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-amber-600"
+            >
+              <Compass size={22} />
+            </div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.28em] text-primary-600"
+            >
+              02
+            </p>
+            <h3 class="mt-3 font-semibold text-neutral-900">
+              Quiet confidence
+            </h3>
+            <p class="mt-2 text-sm text-neutral-600">
+              The best experiences feel simple on the surface and strong
+              underneath.
+            </p>
           </div>
-          <div class="rounded-[1.5rem] border border-neutral-200 bg-gradient-to-br from-neutral-50 to-white p-6 shadow-sm">
-            <p class="text-xs font-semibold uppercase tracking-[0.28em] text-primary-600">03</p>
-            <h3 class="mt-3 font-semibold text-neutral-900">Frontend architecture</h3>
-            <p class="mt-2 text-sm text-neutral-600">Scalable component systems, design consistency, and long-term maintainability.</p>
+          <div
+            class="rounded-[2rem] border border-neutral-300 bg-[linear-gradient(135deg,#f5fffb_0%,#ffffff_55%,#f4f8ff_100%)] p-6 shadow-lg"
+          >
+            <div
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600"
+            >
+              <Cpu size={22} />
+            </div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.28em] text-primary-600"
+            >
+              03
+            </p>
+            <h3 class="mt-3 font-semibold text-neutral-900">
+              Careful engineering
+            </h3>
+            <p class="mt-2 text-sm text-neutral-600">
+              I build with maintainability, accessibility, and long-term
+              resilience in mind.
+            </p>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
-        <div class="rounded-[1.5rem] border border-neutral-200 bg-neutral-50 p-6">
-          <p class="text-3xl font-semibold text-neutral-900">300k+</p>
-          <p class="mt-2 text-sm text-neutral-600">students reached through educational platforms</p>
+  <section class="bg-neutral-950 py-20 sm:py-24 text-white">
+    <div class="container-max container-px">
+      <div
+        class="mb-10 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between"
+      >
+        <div class="max-w-2xl">
+          <p
+            class="mb-4 text-label uppercase tracking-[0.2em] text-primary-100"
+          >
+            Image gallery
+          </p>
+          <h2 class="text-3xl text-primary-500 font-semibold sm:text-4xl">
+            Moments from the work, the people, and the spaces around it.
+          </h2>
         </div>
-        <div class="rounded-[1.5rem] border border-neutral-200 bg-neutral-50 p-6">
-          <p class="text-3xl font-semibold text-neutral-900">5k+</p>
-          <p class="mt-2 text-sm text-neutral-600">users supported across operational and field products</p>
+        <p class="max-w-xl text-lg leading-relaxed text-neutral-300">
+          A few visuals that capture the atmosphere of workshops, product work,
+          and the human side of building.
+        </p>
+      </div>
+
+      <div class="grid gap-4 md:grid-cols-[1.1fr_0.9fr]">
+        <div
+          class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/5"
+        >
+          <img
+            src={galleryOne.src}
+            alt="Workshop scene in Santarém"
+            class="h-full min-h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
+          />
         </div>
-        <div class="rounded-[1.5rem] border border-neutral-200 bg-neutral-50 p-6">
-          <p class="text-3xl font-semibold text-neutral-900">15+</p>
-          <p class="mt-2 text-sm text-neutral-600">years of engineering, design, and product development</p>
+
+        <div class="grid gap-4">
+          <div
+            class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/5"
+          >
+            <img
+              src={galleryTwo.src}
+              alt="Workshop and product collaboration image"
+              class="h-[220px] w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div
+            class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/5"
+          >
+            <img
+              src={galleryThree.src}
+              alt="Portrait of Matheus Thibau"
+              class="h-[220px] w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div
+            class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/5"
+          >
+            <img
+              src={galleryFour.src}
+              alt="Portrait of Matheus Thibau"
+              class="h-[220px] w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <section class="bg-neutral-50 py-20 sm:py-24">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.2),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(16,185,129,0.12),transparent_24%)]"
+    >
+    </div>
+    <div
+      class="absolute inset-0 opacity-70"
+      style="background-image: linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 42px 42px;"
+    >
+    </div>
+    <div
+      class="absolute inset-0 opacity-40"
+      style="background-image: linear-gradient(to bottom, transparent 0%, rgba(3,6,10,0.55) 100%);"
+    >
+    </div>
+    <div
+      class="absolute -left-16 top-16 h-64 w-64 rounded-full bg-primary-500/20 blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-emerald-400/10 blur-3xl"
+    >
+    </div>
+
+    <div class="matrix-layer absolute inset-0 overflow-hidden opacity-40"></div>
+
     <div class="container-max container-px">
-      <div class="max-w-3xl mb-10">
-        <p class="text-label text-primary-600 uppercase tracking-[0.2em] mb-4">Featured work</p>
-        <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900">Selected projects that show the range of my experience.</h2>
+      <div
+        class="mb-12 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between"
+      >
+        <div class="max-w-3xl">
+          <p
+            class="mb-4 text-label uppercase tracking-[0.2em] text-primary-600"
+          >
+            Selected work
+          </p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900">
+            A few projects where the work became genuinely alive.
+          </h2>
+        </div>
+        <p class="max-w-xl text-lg leading-relaxed text-neutral-600">
+          I’ve worked across mission-driven products, education platforms, and
+          operational tools — always trying to make the experience feel clear,
+          resilient, and a little unforgettable.
+        </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <article class="rounded-[2rem] border border-neutral-200 bg-white p-8 shadow-sm transition-transform duration-300 hover:-translate-y-1">
-          <p class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600">Rhizomatica · HERMES</p>
-          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">Communication software for underserved regions</h3>
-          <p class="mt-4 text-neutral-600 leading-relaxed">I helped shape a frontend experience for a platform that exchanges data over shortwave radio, combining usability with hardware-aware workflows and resilient interaction patterns.</p>
+        <article
+          class="rounded-[2rem] border border-neutral-300 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+          >
+            <Network size={22} />
+          </div>
+          <p
+            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+          >
+            Rhizomatica · HERMES
+          </p>
+          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">
+            Communication software for places where reliability matters more
+            than polish.
+          </h3>
+          <p class="mt-4 text-neutral-600 leading-relaxed">
+            A frontend experience designed for shortwave radio workflows, with
+            hardware-aware interactions and resilient patterns that hold up
+            under pressure.
+          </p>
           <div class="mt-6 flex flex-wrap gap-2">
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Angular</span>
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">SDR / GPS</span>
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Offline-first</span>
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >Angular</span
+            >
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >SDR / GPS</span
+            >
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >Offline-first</span
+            >
           </div>
         </article>
 
-        <article class="rounded-[2rem] border border-neutral-200 bg-white p-8 shadow-sm transition-transform duration-300 hover:-translate-y-1">
-          <p class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600">Bernoulli Educação</p>
-          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">Education platform for hundreds of thousands of students</h3>
-          <p class="mt-4 text-neutral-600 leading-relaxed">I contributed to large-scale educational interfaces, including learning resources and essay correction systems designed to support massive reach and reliable use.</p>
+        <article
+          class="rounded-[2rem] border border-neutral-300 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+          >
+            <BookOpen size={22} />
+          </div>
+          <p
+            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+          >
+            Bernoulli Educação
+          </p>
+          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">
+            Education tools built for scale, clarity, and real-world use.
+          </h3>
+          <p class="mt-4 text-neutral-600 leading-relaxed">
+            Large-scale learning flows that balance reach, trust, and speed —
+            especially when the audience is huge and the stakes are practical.
+          </p>
           <div class="mt-6 flex flex-wrap gap-2">
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">TypeScript</span>
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Frontend architecture</span>
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Mentorship</span>
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >TypeScript</span
+            >
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >Frontend architecture</span
+            >
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >Mentorship</span
+            >
           </div>
         </article>
 
-        <article class="rounded-[2rem] border border-neutral-200 bg-white p-8 shadow-sm transition-transform duration-300 hover:-translate-y-1">
-          <p class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600">4Milk</p>
-          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">Operational tools for farm management</h3>
-          <p class="mt-4 text-neutral-600 leading-relaxed">I built interfaces for a platform supporting thousands of users in environments where connectivity and operational clarity mattered equally.</p>
+        <article
+          class="rounded-[2rem] border border-neutral-300 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+          >
+            <Layers3 size={22} />
+          </div>
+          <p
+            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+          >
+            4Milk
+          </p>
+          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">
+            Operational tools shaped by the field, not just the boardroom.
+          </h3>
+          <p class="mt-4 text-neutral-600 leading-relaxed">
+            Interfaces designed for farmers, teams, and day-to-day realities
+            where clarity and speed are non-negotiable.
+          </p>
           <div class="mt-6 flex flex-wrap gap-2">
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Web apps</span>
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Offline workflows</span>
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Product thinking</span>
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >Web apps</span
+            >
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >Offline workflows</span
+            >
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >Product thinking</span
+            >
           </div>
         </article>
 
-        <article class="rounded-[2rem] border border-neutral-200 bg-white p-8 shadow-sm transition-transform duration-300 hover:-translate-y-1">
-          <p class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600">Open source & systems work</p>
-          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">A broad toolkit shaped by collaboration and experimentation</h3>
-          <p class="mt-4 text-neutral-600 leading-relaxed">My work spans Vue, React, Angular, Python, PHP, Shopify, WebSockets, and more, always grounded in building maintainable software with clear product outcomes.</p>
+        <article
+          class="rounded-[2rem] border border-neutral-300 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+          >
+            <Workflow size={22} />
+          </div>
+          <p
+            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+          >
+            Open source & systems work
+          </p>
+          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">
+            A toolkit shaped by curiosity, collaboration, and a love for
+            building things that last.
+          </h3>
+          <p class="mt-4 text-neutral-600 leading-relaxed">
+            My work spans Vue, React, Angular, Python, PHP, Shopify, WebSockets,
+            and more — always grounded in clear product outcomes and
+            maintainable software.
+          </p>
           <div class="mt-6 flex flex-wrap gap-2">
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Vue</span>
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">React</span>
-            <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Python</span>
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >Vue</span
+            >
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >React</span
+            >
+            <span
+              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              >Python</span
+            >
           </div>
         </article>
       </div>
@@ -120,38 +385,80 @@ import workshopThree from '../assets/images/workshops/workshop-3.svg';
 
   <section class="bg-white py-20 sm:py-24">
     <div class="container-max container-px">
-      <div class="max-w-3xl mb-10">
-        <p class="text-label text-primary-600 uppercase tracking-[0.2em] mb-4">Workshops & community</p>
-        <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900">A visual glimpse into the workshops, sessions, and collaborative spaces I help shape.</h2>
-        <p class="mt-4 text-lg text-neutral-700 leading-relaxed">
-          Beyond software delivery, I enjoy creating environments where ideas, tools, and people can come together. These visuals reflect the hands-on, welcoming spirit behind my workshop work.
+      <div class="mb-10 max-w-3xl">
+        <p class="mb-4 text-label uppercase tracking-[0.2em] text-primary-600">
+          Signals from the studio
+        </p>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900">
+          I enjoy building spaces where ideas can breathe, be tested, and become
+          useful together.
+        </h2>
+        <p class="mt-4 text-lg leading-relaxed text-neutral-700">
+          Beyond software delivery, I care about the room itself: the
+          facilitation, the energy, the shared momentum. That’s where some of
+          the most meaningful work happens.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <figure class="overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 shadow-sm">
-          <img src={workshopOne.src} alt="Workshop illustration with collaborative planning and digital tools" class="h-64 w-full object-cover" />
-          <figcaption class="p-5">
-            <h3 class="font-semibold text-neutral-900">Collaborative sessions</h3>
-            <p class="mt-2 text-sm text-neutral-600">Hands-on workshops focused on product thinking, design, and frontend craft.</p>
-          </figcaption>
-        </figure>
+      <div class="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <div
+          class="rounded-[2rem] border border-neutral-300 bg-[linear-gradient(135deg,#f8fbff_0%,#ffffff_55%,#eefcf7_100%)] p-8 shadow-lg"
+        >
+          <div
+            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+          >
+            <Users size={22} />
+          </div>
+          <p
+            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+          >
+            01 · Facilitation
+          </p>
+          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">
+            Workshops that start with a real question.
+          </h3>
+          <p class="mt-4 text-neutral-600 leading-relaxed">
+            I design sessions that feel practical, generous, and grounded in the
+            people in the room rather than a polished script.
+          </p>
+        </div>
 
-        <figure class="overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 shadow-sm">
-          <img src={workshopTwo.src} alt="Workshop illustration with interactive learning and group activities" class="h-64 w-full object-cover" />
-          <figcaption class="p-5">
-            <h3 class="font-semibold text-neutral-900">Learning environments</h3>
-            <p class="mt-2 text-sm text-neutral-600">Spaces designed to make complex ideas approachable and practical.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 shadow-sm">
-          <img src={workshopThree.src} alt="Workshop illustration showing a technical event with discussion and demos" class="h-64 w-full object-cover" />
-          <figcaption class="p-5">
-            <h3 class="font-semibold text-neutral-900">Technical demos</h3>
-            <p class="mt-2 text-sm text-neutral-600">Presentations and practical demos that connect people with tools and ideas.</p>
-          </figcaption>
-        </figure>
+        <div class="grid gap-6">
+          <div
+            class="rounded-[2rem] border border-neutral-300 bg-neutral-50 p-7 shadow-lg"
+          >
+            <div
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-amber-600"
+            >
+              <BookOpen size={20} />
+            </div>
+            <p
+              class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+            >
+              02 · Learning
+            </p>
+            <h3 class="mt-3 text-xl font-semibold text-neutral-900">
+              Spaces where complicated ideas can become approachable.
+            </h3>
+          </div>
+          <div
+            class="rounded-[2rem] border border-neutral-300 bg-neutral-50 p-7 shadow-lg"
+          >
+            <div
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600"
+            >
+              <Users size={20} />
+            </div>
+            <p
+              class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+            >
+              03 · Exchange
+            </p>
+            <h3 class="mt-3 text-xl font-semibold text-neutral-900">
+              Hands-on demos, honest conversations, and shared momentum.
+            </h3>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -159,39 +466,104 @@ import workshopThree from '../assets/images/workshops/workshop-3.svg';
   <section class="bg-neutral-900 py-20 sm:py-24 text-white">
     <div class="container-max container-px">
       <div class="max-w-3xl">
-        <p class="text-label text-primary-300 uppercase tracking-[0.2em] mb-4">Toolkit</p>
-        <h2 class="text-3xl sm:text-4xl font-semibold mb-6">Design systems, frontend engineering, and product thinking in one profile.</h2>
-        <p class="text-lg text-neutral-300 leading-relaxed">
-          I bring together interface craft, modern frontend stacks, and the discipline to build software that lasts beyond the first release.
+        <p class="mb-4 text-label uppercase tracking-[0.2em] text-primary-300">
+          Toolkit
+        </p>
+        <h2 class="mb-6 text-3xl sm:text-4xl font-semibold">
+          A mix of product thinking, system design, and careful craft.
+        </h2>
+        <p class="text-lg leading-relaxed text-neutral-300">
+          I bring together interface craft, modern frontend stacks, and the
+          discipline to build software that lasts beyond the first release — and
+          still feels human when people use it.
         </p>
       </div>
 
       <div class="mt-10 flex flex-wrap gap-3">
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">TypeScript</span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Angular</span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Vue</span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">React</span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Python</span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">WebSockets</span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Shopify</span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200">Design systems</span>
+        <span
+          class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200"
+          >TypeScript</span
+        >
+        <span
+          class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200"
+          >Angular</span
+        >
+        <span
+          class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200"
+          >Vue</span
+        >
+        <span
+          class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200"
+          >React</span
+        >
+        <span
+          class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200"
+          >Python</span
+        >
+        <span
+          class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200"
+          >WebSockets</span
+        >
+        <span
+          class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200"
+          >Shopify</span
+        >
+        <span
+          class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-200"
+          >Design systems</span
+        >
       </div>
 
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white/5 rounded-2xl border border-white/10 p-6">
+      <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div
+            class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-primary-300"
+          >
+            <Compass size={22} />
+          </div>
           <h3 class="text-xl font-semibold">Journey</h3>
-          <p class="mt-3 text-sm text-neutral-300">A long-term path through engineering, design, education, and mission-driven products.</p>
-          <a href="/journey" class="mt-4 inline-flex text-primary-300 hover:text-primary-200">Read more →</a>
+          <p class="mt-3 text-sm text-neutral-300">
+            A long-term path through engineering, design, education, and
+            mission-driven products.
+          </p>
+          <a
+            href="/journey"
+            class="mt-4 inline-flex text-primary-300 hover:text-primary-200"
+            >Read more →</a
+          >
         </div>
-        <div class="bg-white/5 rounded-2xl border border-white/10 p-6">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div
+            class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-primary-300"
+          >
+            <Layers3 size={22} />
+          </div>
           <h3 class="text-xl font-semibold">Projects</h3>
-          <p class="mt-3 text-sm text-neutral-300">A deeper look at the work behind the platforms and systems I’ve built.</p>
-          <a href="/projects" class="mt-4 inline-flex text-primary-300 hover:text-primary-200">Explore projects →</a>
+          <p class="mt-3 text-sm text-neutral-300">
+            A deeper look at the work behind the platforms and systems I’ve
+            built.
+          </p>
+          <a
+            href="/projects"
+            class="mt-4 inline-flex text-primary-300 hover:text-primary-200"
+            >Explore projects →</a
+          >
         </div>
-        <div class="bg-white/5 rounded-2xl border border-white/10 p-6">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div
+            class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-primary-300"
+          >
+            <Users size={22} />
+          </div>
           <h3 class="text-xl font-semibold">Communities</h3>
-          <p class="mt-3 text-sm text-neutral-300">The networks, teams, and communities that shaped the way I work.</p>
-          <a href="/communities" class="mt-4 inline-flex text-primary-300 hover:text-primary-200">Discover more →</a>
+          <p class="mt-3 text-sm text-neutral-300">
+            The networks, teams, and communities that shaped the way I work.
+          </p>
+          <a
+            href="/communities"
+            class="mt-4 inline-flex text-primary-300 hover:text-primary-200"
+            >Discover more →</a
+          >
         </div>
       </div>
     </div>
