@@ -23,11 +23,8 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
 >
   <Hero />
 
-  <section id="story" class="relative overflow-hidden bg-white py-20 sm:py-24">
-    <div
-      class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.08),transparent_24%)]"
-    >
-    </div>
+  <section id="story" class="relative overflow-hidden py-20 sm:py-24">
+    
     <div class="container-max container-px relative">
       <div
         class="grid grid-cols-1 gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start"
@@ -38,11 +35,11 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
           >
             What defines my work
           </p>
-          <h2 class="mb-6 text-3xl font-semibold text-neutral-900 sm:text-4xl">
+          <h2 class="mb-6 text-3xl font-semibold text-white sm:text-4xl">
             I build interfaces that feel calm in the middle of real-world
             complexity.
           </h2>
-          <p class="text-lg leading-relaxed text-neutral-700">
+          <p class="text-lg leading-relaxed text-neutral-300">
             My path has moved through education, commerce, operations, and
             communication systems. I think in stories, systems, and friction
             points — and I care about making difficult tools feel legible,
@@ -52,10 +49,11 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
 
         <div class="grid gap-4">
           <div
-            class="rounded-[2rem] border border-neutral-300 bg-[linear-gradient(135deg,#f8fbff_0%,#ffffff_50%,#eefcf7_100%)] p-6 shadow-lg"
+            class="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
+            data-gsap-reveal
           >
             <div
-              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-500/15 text-primary-300"
             >
               <Sparkles size={22} />
             </div>
@@ -73,7 +71,8 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
             </p>
           </div>
           <div
-            class="rounded-[2rem] border border-neutral-300 bg-[linear-gradient(135deg,#fffcf7_0%,#ffffff_45%,#f5f3ff_100%)] p-6 shadow-lg"
+            class="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
+            data-gsap-reveal
           >
             <div
               class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-amber-600"
@@ -94,7 +93,8 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
             </p>
           </div>
           <div
-            class="rounded-[2rem] border border-neutral-300 bg-[linear-gradient(135deg,#f5fffb_0%,#ffffff_55%,#f4f8ff_100%)] p-6 shadow-lg"
+            class="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
+            data-gsap-reveal
           >
             <div
               class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600"
@@ -119,10 +119,11 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
     </div>
   </section>
 
-  <section class="bg-neutral-950 py-20 sm:py-24 text-white">
+  <section class="py-20 sm:py-24 text-white">
     <div class="container-max container-px">
       <div
         class="mb-10 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between"
+        data-gsap-reveal
       >
         <div class="max-w-2xl">
           <p
@@ -140,9 +141,10 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
         </p>
       </div>
 
-      <div class="grid gap-4 md:grid-cols-[1.1fr_0.9fr]">
+      <div class="grid gap-4 md:grid-cols-[1.1fr_0.9fr]" data-gsap-reveal>
         <div
           class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/5"
+          data-gsap-reveal
         >
           <img
             src={galleryOne.src}
@@ -184,7 +186,7 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
     </div>
   </section>
 
-  <section class="bg-neutral-50 py-20 sm:py-24">
+  <section class="py-20 sm:py-24">
     <div
       class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.2),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(16,185,129,0.12),transparent_24%)]"
     >
@@ -208,7 +210,6 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
     >
     </div>
 
-    <div class="matrix-layer absolute inset-0 overflow-hidden opacity-40"></div>
 
     <div class="container-max container-px">
       <div
@@ -220,11 +221,11 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
           >
             Selected work
           </p>
-          <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900">
+          <h2 class="text-3xl sm:text-4xl font-semibold text-white">
             A few projects where the work became genuinely alive.
           </h2>
         </div>
-        <p class="max-w-xl text-lg leading-relaxed text-neutral-600">
+        <p class="max-w-xl text-lg leading-relaxed text-neutral-300">
           I’ve worked across mission-driven products, education platforms, and
           operational tools — always trying to make the experience feel clear,
           resilient, and a little unforgettable.
@@ -233,30 +234,30 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <article
-          class="rounded-[2rem] border border-neutral-300 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-1"
+          class="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1"
         >
           <div
-            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-500/15 text-primary-300"
           >
             <Network size={22} />
           </div>
           <p
-            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-300"
           >
             Rhizomatica · HERMES
           </p>
-          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">
+          <h3 class="mt-3 text-2xl font-semibold text-white">
             Communication software for places where reliability matters more
             than polish.
           </h3>
-          <p class="mt-4 text-neutral-600 leading-relaxed">
+          <p class="mt-4 text-neutral-300 leading-relaxed">
             A frontend experience designed for shortwave radio workflows, with
             hardware-aware interactions and resilient patterns that hold up
             under pressure.
           </p>
           <div class="mt-6 flex flex-wrap gap-2">
             <span
-              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              class="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-sm text-neutral-200"
               >Angular</span
             >
             <span
@@ -271,28 +272,29 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
         </article>
 
         <article
-          class="rounded-[2rem] border border-neutral-300 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-1"
+          class="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1"
+          data-gsap-reveal
         >
           <div
-            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-500/15 text-primary-300"
           >
             <BookOpen size={22} />
           </div>
           <p
-            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-300"
           >
             Bernoulli Educação
           </p>
-          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">
+          <h3 class="mt-3 text-2xl font-semibold text-white">
             Education tools built for scale, clarity, and real-world use.
           </h3>
-          <p class="mt-4 text-neutral-600 leading-relaxed">
+          <p class="mt-4 text-neutral-300 leading-relaxed">
             Large-scale learning flows that balance reach, trust, and speed —
             especially when the audience is huge and the stakes are practical.
           </p>
           <div class="mt-6 flex flex-wrap gap-2">
             <span
-              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              class="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-sm text-neutral-200"
               >TypeScript</span
             >
             <span
@@ -307,28 +309,29 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
         </article>
 
         <article
-          class="rounded-[2rem] border border-neutral-300 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-1"
+          class="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1"
+          data-gsap-reveal
         >
           <div
-            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-500/15 text-primary-300"
           >
             <Layers3 size={22} />
           </div>
           <p
-            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-300"
           >
             4Milk
           </p>
-          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">
+          <h3 class="mt-3 text-2xl font-semibold text-white">
             Operational tools shaped by the field, not just the boardroom.
           </h3>
-          <p class="mt-4 text-neutral-600 leading-relaxed">
+          <p class="mt-4 text-neutral-300 leading-relaxed">
             Interfaces designed for farmers, teams, and day-to-day realities
             where clarity and speed are non-negotiable.
           </p>
           <div class="mt-6 flex flex-wrap gap-2">
             <span
-              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              class="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-sm text-neutral-200"
               >Web apps</span
             >
             <span
@@ -343,30 +346,31 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
         </article>
 
         <article
-          class="rounded-[2rem] border border-neutral-300 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-1"
+          class="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1"
+          data-gsap-reveal
         >
           <div
-            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-500/15 text-primary-300"
           >
             <Workflow size={22} />
           </div>
           <p
-            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-300"
           >
             Open source & systems work
           </p>
-          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">
+          <h3 class="mt-3 text-2xl font-semibold text-white">
             A toolkit shaped by curiosity, collaboration, and a love for
             building things that last.
           </h3>
-          <p class="mt-4 text-neutral-600 leading-relaxed">
+          <p class="mt-4 text-neutral-300 leading-relaxed">
             My work spans Vue, React, Angular, Python, PHP, Shopify, WebSockets,
             and more — always grounded in clear product outcomes and
             maintainable software.
           </p>
           <div class="mt-6 flex flex-wrap gap-2">
             <span
-              class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
+              class="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-sm text-neutral-200"
               >Vue</span
             >
             <span
@@ -383,17 +387,17 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
     </div>
   </section>
 
-  <section class="bg-white py-20 sm:py-24">
+  <section class="py-20 sm:py-24">
     <div class="container-max container-px">
       <div class="mb-10 max-w-3xl">
-        <p class="mb-4 text-label uppercase tracking-[0.2em] text-primary-600">
+        <p class="mb-4 text-label uppercase tracking-[0.2em] text-primary-300">
           Signals from the studio
         </p>
         <h2 class="text-3xl sm:text-4xl font-semibold text-neutral-900">
           I enjoy building spaces where ideas can breathe, be tested, and become
           useful together.
         </h2>
-        <p class="mt-4 text-lg leading-relaxed text-neutral-700">
+        <p class="mt-4 text-lg leading-relaxed text-neutral-300">
           Beyond software delivery, I care about the room itself: the
           facilitation, the energy, the shared momentum. That’s where some of
           the most meaningful work happens.
@@ -402,22 +406,22 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
 
       <div class="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
         <div
-          class="rounded-[2rem] border border-neutral-300 bg-[linear-gradient(135deg,#f8fbff_0%,#ffffff_55%,#eefcf7_100%)] p-8 shadow-lg"
+          class="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
         >
           <div
-            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600"
+            class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-500/15 text-primary-300"
           >
             <Users size={22} />
           </div>
           <p
-            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+            class="text-sm font-medium uppercase tracking-[0.24em] text-primary-300"
           >
             01 · Facilitation
           </p>
-          <h3 class="mt-3 text-2xl font-semibold text-neutral-900">
+          <h3 class="mt-3 text-2xl font-semibold text-white">
             Workshops that start with a real question.
           </h3>
-          <p class="mt-4 text-neutral-600 leading-relaxed">
+          <p class="mt-4 text-neutral-300 leading-relaxed">
             I design sessions that feel practical, generous, and grounded in the
             people in the room rather than a polished script.
           </p>
@@ -425,36 +429,36 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
 
         <div class="grid gap-6">
           <div
-            class="rounded-[2rem] border border-neutral-300 bg-neutral-50 p-7 shadow-lg"
+            class="rounded-[2rem] border border-white/10 bg-white/10 p-7 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
           >
             <div
-              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-amber-600"
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400/15 text-amber-300"
             >
               <BookOpen size={20} />
             </div>
             <p
-              class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+              class="text-sm font-medium uppercase tracking-[0.24em] text-primary-300"
             >
               02 · Learning
             </p>
-            <h3 class="mt-3 text-xl font-semibold text-neutral-900">
+            <h3 class="mt-3 text-xl font-semibold text-white">
               Spaces where complicated ideas can become approachable.
             </h3>
           </div>
           <div
-            class="rounded-[2rem] border border-neutral-300 bg-neutral-50 p-7 shadow-lg"
+            class="rounded-[2rem] border border-white/10 bg-white/10 p-7 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
           >
             <div
-              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600"
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-400/15 text-emerald-300"
             >
               <Users size={20} />
             </div>
             <p
-              class="text-sm font-medium uppercase tracking-[0.24em] text-primary-600"
+              class="text-sm font-medium uppercase tracking-[0.24em] text-primary-300"
             >
               03 · Exchange
             </p>
-            <h3 class="mt-3 text-xl font-semibold text-neutral-900">
+            <h3 class="mt-3 text-xl font-semibold text-white">
               Hands-on demos, honest conversations, and shared momentum.
             </h3>
           </div>
@@ -463,7 +467,7 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
     </div>
   </section>
 
-  <section class="bg-neutral-900 py-20 sm:py-24 text-white">
+  <section class="py-20 sm:py-24 text-white">
     <div class="container-max container-px">
       <div class="max-w-3xl">
         <p class="mb-4 text-label uppercase tracking-[0.2em] text-primary-300">
@@ -569,3 +573,51 @@ import galleryFour from "../assets/images/workshops/tunisia2.jpg";
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const initAnimations = () => {
+    const heroRoot = document.querySelector("[data-hero-root]");
+
+    if (heroRoot) {
+      gsap.set(heroRoot.querySelectorAll("[data-gsap-hero]"), {
+        opacity: 0,
+        y: 28,
+      });
+
+      gsap.to(heroRoot.querySelectorAll("[data-gsap-hero]"), {
+        opacity: 1,
+        y: 0,
+        duration: 1.1,
+        ease: "power3.out",
+        stagger: 0.14,
+        delay: 0.1,
+      });
+    }
+
+    document.querySelectorAll("[data-gsap-reveal]").forEach((element) => {
+      gsap.fromTo(
+        element,
+        { opacity: 0, y: 32 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: element,
+            start: "top 85%",
+            once: true,
+          },
+        },
+      );
+    });
+  };
+
+  document.addEventListener("astro:page-load", initAnimations);
+  initAnimations();
+</script>
